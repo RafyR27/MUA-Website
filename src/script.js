@@ -4,7 +4,6 @@ const menu = document.querySelector('#mobile-menu');
 const overlay = document.querySelector('#overlay');
 const gunungWayangKiri = document.querySelector('#gunungWayang-kiri');
 const gunungWayangKanan = document.querySelector('#gunungWayang-kanan');
-const portofolio = document.querySelector('#portofolio');
 const WaIcon = document.querySelector('#WA-animation');
 const testi1 = document.querySelector('#testi1');
 const testi2 = document.querySelector('#testi2');
@@ -49,12 +48,6 @@ document.addEventListener('scroll', function(){
     }else{
         nav.classList.add('lg:translate-y-[27px]');
         menu.classList.add('lg:translate-y-[27px]');
-    }
-    
-    if(portofolio.getBoundingClientRect().top < window.innerHeight * 0.75){
-        portofolio.classList.remove('opacity-0');
-        portofolio.classList.remove('translate-y-10');
-        portofolio.classList.add('animation-active');
     }
 
     if(testi1.getBoundingClientRect().top < window.innerHeight * 0.75){

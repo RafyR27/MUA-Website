@@ -577,11 +577,17 @@
   .text-\[\#4e3b2d\] {
     color: #4e3b2d;
   }
+  .text-\[\#5E3A23\] {
+    color: #5E3A23;
+  }
   .text-\[\#8B5E3C\] {
     color: #8B5E3C;
   }
   .text-\[\#573b26\] {
     color: #573b26;
+  }
+  .text-\[\#754A2F\] {
+    color: #754A2F;
   }
   .text-white {
     color: var(--color-white);

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>MUA Website</title>
+</head>
+<body>
+    <header>
+        <nav class="w-full h-[75px] bg-white  flex justify-between items-center text-[#8B5E3C] px-[40px] fixed drop-shadow-xs z-50 lg:px-[150px] lg:translate-y-[27px] transition-all duration-300">
+            <h1 class="font-alex text-[#4e3b2d] font-bold text-[1.6rem]">MakeUp</h1>
+            <i id="openMenu-btn" class="fa-solid fa-bars fa-lg"></i>
+        </nav>
+
+        <div id="overlay" class="w-[100%] h-[100%] top-0 right-0 bg-black fixed z-60 overlay"></div>
+
+        <div id="mobile-menu" class="w-[80%] min-h-[100vh] bg-white right-0 top-0 fixed mobile-menu z-70 lg:min-h-[75px] lg:w-[70%] lg:items-center lg:flex lg:justify-end lg:px-[140px] lg:duration-0 lg:translate-y-[27px] transition-all duration-300">
+            <div class="flex justify-end mt-[30px] mr-[30px] lg:hidden">
+                <button id="close-btn"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+            </div>
+    
+            <ul class="flex flex-col gap-6 text-left text-[1.3rem] pt-[50px] font-playfair font-bold pb-[110px] lg:flex-row lg:gap-16 lg:justify-end lg:pb-0 lg:pt-0 lg:text-[1.1rem] text-[#8B5E3C]">
+                <a id="home-page" href="index.html"><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 hover:text-black lg:hover:text-[#8B5E3C]">Home</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">About</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Services</li></a>
+                <a href="gallery.html"><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Gallery</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Contact Us</li></a>
+            </ul>
+
+            <div class="flex flex-col gap-5 mx-[40px] font-inter text-[#573b26] lg:hidden">
+                <div class="flex items-center gap-5">
+                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    <p class="font-semibold text-[17px]">+62822222222</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <p class="font-semibold text-[17px]">Karawang, Jawa Barat</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <p class="font-semibold text-[17px]">@MUA</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="WA-animation" class="w-[55px] fixed -bottom-20 right-4 bg-[#8B5E3C] rounded-full z-10">
+            <a href=""><img id="WA" class="p-3" src="src/icon/WA.svg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="lg:w-full lg:h-[27px] bg-[#F5EDE4] px-[150px] font-playfair flex justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot fa-xs" style="padding-top: 1px;"></i>
+                <p class="font-semibold text-[0.8rem] pt-[2px]">Karawang, Jawa Barat</p>
+            </div>
+
+            <div class="flex item-center">
+                <a class="flex items-center gap-2 hover:text-[#4e3b2d]" href="">
+                    <i class="fa-brands fa-instagram" style="padding-top: 1px;"></i>
+                    <p class="font-semibold text-[0.8rem] pt-[2px]">MUA</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full h-auto bg-[#F5EDE4] text-center pt-[115px] px-[25px] lg:px-[100px] lg:grid lg:grid-cols-2 lg:h-[90vh] lg:pt-[50px]" style="clip-path: ellipse(120% 50% at 50% 50%);">
+            <div class="flex items-center flex-col lg:justify-center">
+                <div id="gunungWayang-kiri" class="w-[130px] absolute z-1 lg:w-[200px]">
+                    <img id="gunungWayang" src="src/icon/gunung-wayang.png" alt="">
+                </div>
+                <div id="gunungWayang-kanan" class="w-[130px] absolute z-1 lg:w-[200px]" >
+                    <img id="gunungWayang" class="object-cover" src="src/icon/gunung-wayang.png" alt="">
+                </div>
+    
+                <div class="w-[200px] h-[300px] bg-white rounded-t-full overflow-hidden z-10 lg:w-[250px] lg:h-[370px]">
+                    <img class="object-cover" src="src/img/utama.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="lg:text-left flex flex-col lg:justify-center">
+                <h1 class="font-alex font-bold text-[3.5rem] text-[#573b26] pt-[28px]">MakeUp</h1>
+                <p class="font-inter text-[1rem] text-[#8B5E3C]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptate porro maiores obcaecati eligendi aperiam quibusdam earum quasi consequuntur a!</p>
+                <div class="flex justify-center lg:justify-start gap-5 pt-10 pb-15 font-playfair text-[#573b26] font-medium lg:pt-[30px]">
+                    <a class="border-2 border-[#573b26] px-4 py-2 rounded-xs hover:text-white hover:bg-[#573b26] flex gap-2 items-center" href=""><i id="wa-icon" class="fa-brands fa-whatsapp fa-lg"></i><button>Book Now</button></a>
+                    <a class="border-2 border-[#573b26] px-4 py-2 rounded-xs hover:text-white hover:bg-[#573b26] flex gap-2 items-center" href=""><i id="ig-icon" class="fa-brands fa-instagram fa-lg"></i><button>Instagram</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="w-full h-[92vh] bg-white flex flex-col items-center px-[25px] font-playfair lg:h-[100vh]">
+            <h1 class="font-bold pt-[20px] pb-[40px] text-[2.5rem] text-[#573b26] lg:pt-[40px]">GALLERY</h1>
+            <div id="portofolio" class="grid grid-cols-2 gap-x-3 gap-y-4 opacity-0 translate-y-10 lg:grid-cols-4 lg:gap-4">
+                <div class="max-w-[165px] h-[225px] rounded-sm overflow-hidden lg:max-w-[300px] lg:h-[400px]">
+                    <img loading="lazy" class="w-auto h-auto object-cover" src="src/img/porto1.jpg" alt="">
+                </div>
+                <div class="max-w-[165px] h-[225px] rounded-sm overflow-hidden lg:max-w-[300px] lg:h-[400px]">
+                    <img loading="lazy" class="w-auto h-auto object-cover" src="src/img/porto1.jpg" alt="">
+                </div>
+                <div class="max-w-[165px] h-[225px] rounded-sm overflow-hidden lg:max-w-[300px] lg:h-[400px]">
+                    <img loading="lazy" class="w-auto h-auto object-cover" src="src/img/porto1.jpg" alt="">
+                </div>
+                <div class="max-w-[165px] h-[225px] rounded-sm overflow-hidden lg:max-w-[300px] lg:h-[400px]">
+                    <img loading="lazy" class="w-auto h-auto object-cover" src="src/img/porto1.jpg" alt="">
+                </div>
+            </div>
+            <a class="border-2 border-[#573b26] text-white px-7 py-2 rounded-xs hover:text-[#573b26] hover:bg-white font-medium  mt-[50px] bg-[#573b26] text-[1.1rem]" href="gallery.html"><button>More Photo</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full h-[112vh] bg-[#F5EDE4] flex items-center flex-col pt-[80px] px-[25px] lg:h-[90vh]" style="clip-path: ellipse(180% 100% at 50% 100%);">
+            <h1 class="font-playfair text-[2.2rem] font-bold text-[#573b26] text-center">CERITA KEPUASAN KLIEN</h1>
+
+            <div class="lg:flex lg:flex-row lg:gap-10">
+                <div id="testi1" class="max-w-[350px] h-[200px] bg-white rounded-xs font-inter text-[1rem] text-center px-[30px] flex flex-col items-center justify-center gap-7 mt-[24px] opacity-0 translate-y-10">
+                    <i id="kutip" class="fa-solid fa-quote-left fa-xl" style="filter: brightness(0) saturate(100%) invert(17%) sepia(7%) saturate(5968%) hue-rotate(345deg) brightness(96%) contrast(75%);"></i>
+                    <p class="text-[#8B5E3C] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum laborum vel. Eos, nobis perspiciatis.</p>
+                    <i id="kutip" class="fa-solid fa-quote-right fa-xl" style="filter: brightness(0) saturate(100%) invert(17%) sepia(7%) saturate(5968%) hue-rotate(345deg) brightness(96%) contrast(75%);"></i>
+                </div>
+    
+                <div id="testi2" class="max-w-[350px] h-[200px] bg-white rounded-xs font-inter text-[1rem] text-center px-[30px] flex flex-col items-center justify-center gap-7 mt-[24px] opacity-0 translate-y-10">
+                    <i id="kutip" class="fa-solid fa-quote-left fa-xl" style="filter: brightness(0) saturate(100%) invert(17%) sepia(7%) saturate(5968%) hue-rotate(345deg) brightness(96%) contrast(75%);"></i>
+                    <p class="text-[#8B5E3C] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum laborum vel. Eos, nobis perspiciatis.</p>
+                    <i id="kutip" class="fa-solid fa-quote-right fa-xl" style="filter: brightness(0) saturate(100%) invert(17%) sepia(7%) saturate(5968%) hue-rotate(345deg) brightness(96%) contrast(75%);"></i>
+                </div>
+            </div>
+
+            <a class="border-2 border-[#573b26] text-[#573b26] px-7 py-1 rounded-xs hover:text-white hover:bg-[#573b26] font-medium font-playfair mt-[50px] bg-[#F5EDE4] text-[1.1rem]" href=""><button>More Testimoni</button></a>
+
+            <div class="flex flex-col items-center font-alex pt-[50px] lg:pt-[80px]">
+                <h1 class="h-10 font-bold text-[2.5rem]">MakeUp</h1>
+                <p class="font-inter pt-2 text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/src/script.js"></script>
+</body>
+</html>

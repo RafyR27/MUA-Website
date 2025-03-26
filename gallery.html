@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>MUA Website</title>
+</head>
+<body>
+    <header>
+        <nav class="w-full h-[75px] bg-white  flex justify-between items-center text-[#8B5E3C] px-[40px] fixed drop-shadow-xs z-50 lg:px-[150px] lg:translate-y-[27px] transition-all duration-300">
+            <h1 class="font-alex text-[#4e3b2d] font-bold text-[1.6rem]">MakeUp</h1>
+            <i id="openMenu-btn" class="fa-solid fa-bars fa-lg"></i>
+        </nav>
+
+        <div id="overlay" class="w-[100%] h-[100%] top-0 right-0 bg-black fixed z-60 overlay"></div>
+
+        <div id="mobile-menu" class="w-[80%] min-h-[100vh] bg-white right-0 top-0 fixed mobile-menu z-70 lg:min-h-[75px] lg:w-[70%] lg:items-center lg:flex lg:justify-end lg:px-[140px] lg:duration-0 lg:translate-y-[27px] transition-all duration-300">
+            <div class="flex justify-end mt-[30px] mr-[30px] lg:hidden">
+                <button id="close-btn"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+            </div>
+    
+            <ul class="flex flex-col gap-6 text-left text-[1.3rem] pt-[50px] font-playfair font-bold pb-[110px] lg:flex-row lg:gap-16 lg:justify-end lg:pb-0 lg:pt-0 lg:text-[1.1rem] text-[#8B5E3C]">
+                <a href="index.html"><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Home</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">About</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Services</li></a>
+                <a id="gallery-page" href="gallery.html"><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 hover:text-black lg:hover:text-[#8B5E3C]">Gallery</li></a>
+                <a href=""><li class="px-[10px] mx-[30px] border-b-1 border-gray-200 pb-[20px] lg:border-none lg:px-0 lg:mx-0 lg:pb-0 lg:hover:underline lg:hover:underline-offset-3 hover:text-black lg:hover:text-[#8B5E3C]">Contact Us</li></a>
+            </ul>
+
+            <div class="flex flex-col gap-5 mx-[40px] font-inter text-[#573b26] lg:hidden">
+                <div class="flex items-center gap-5">
+                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    <p class="font-semibold text-[17px]">+62822222222</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <p class="font-semibold text-[17px]">Karawang, Jawa Barat</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <p class="font-semibold text-[17px]">@MUA</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="WA-animation" class="w-[55px] fixed -bottom-20 right-4 bg-[#8B5E3C] rounded-full z-30">
+            <a href=""><img id="WA" class="p-3" src="src/icon/WA.svg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="lg:w-full lg:h-[27px] bg-[#F5EDE4] px-[150px] font-playfair flex justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot fa-xs" style="padding-top: 1px;"></i>
+                <p class="font-semibold text-[0.8rem] pt-[2px]">Karawang, Jawa Barat</p>
+            </div>
+            <div class="flex item-center">
+                <a class="flex items-center gap-2 hover:text-[#4e3b2d]" href="">
+                    <i class="fa-brands fa-instagram" style="padding-top: 1px;"></i>
+                    <p class="font-semibold text-[0.8rem] pt-[2px]">MUA</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full h-[25vh] bg-[#F5EDE4] flex items-center font-alex mt-[25px] lg:h-[50vh] lg:mt-0">
+            <h1 class="font-bold text-[2.8rem] px-[40px] text-[#573b26] lg:text-[3.8rem] lg:pt-[40px] lg:px-[150px] z-10">Gallery</h1>
+            <div class="absolute opacity-2 lg:w-[90%] lg:right-0 lg:opacity-1">
+                <img class="object-cover" src="src/icon/bg.png" alt="">
+            </div>
+        </div>
+    </main>
+
+
+    <section>
+        <div class="w-full h-[130vh] bg-white lg:h-[145vh]">
+            <div class="w-full h-[130vh] bg-white z-20 absolute lg:h-[145vh]">
+                <div class="grid grid-cols-2 gap-5 mx-[30px] mt-[30px] lg:grid-cols-4 lg:gap-8 lg:pt-[50px] lg:mx-[130px]">
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                    <div class="max-w-[165px] h-[225px] bg-[#8B5E3C] rounded-sm lg:max-w-[300px] lg:h-[400px]">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full h-[40vh] bg-[#F5EDE4] font-playfair lg:h-[60vh]">
+            <div class="px-[30px] pt-[30px] text-center lg:pt-[60px]">
+                <h1 class="text-[#573b26] font-semibold text-[1.3rem] lg:text-[2.3rem]">Ingin tampil memukau seperti mereka? Yuk, booking sekarang!</h1>
+            </div>
+            <div class="flex justify-center mt-[25px] lg:mt-[50px]">
+                <a id="book-btn" class="border-2 border-[#573b26] px-6 py-3 rounded-sm hover:text-[#573b26] hover:bg-[#F5EDE4] flex gap-3 items-center text-[1.1rem] text-white bg-[#573b26] font-medium opacity-0 translate-y-10" href=""><i id="wa-icon" class="fa-brands fa-whatsapp fa-lg"></i><button>+6288888888</button></a>
+            </div>
+            <div class="flex flex-col items-center font-alex pt-[50px] lg:pt-[95px]">
+                <h1 class="h-10 font-bold text-[2.5rem]">MakeUp</h1>
+                <p class="font-inter pt-2 text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/src/gallery.js"></script>
+</body>
+</html>
